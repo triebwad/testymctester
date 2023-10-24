@@ -189,33 +189,54 @@ en:
       current: Current
       previous: Previous
     container_type:
-      box: Box
       carton: Carton
-      case: Case
-      container: Container
-      folder: Folder
+	  box: Box
+	  volume: Volume
+	  folder: Folder
+      digital_folder: Digital-folder
+      oversize_box: Oversize-box
+      flat_box: Flat-box
+      oversize_folder: Oversize-folder
+      oversize_item: Oversize-item
+      oversize_portfolio: Oversize-portfolio
+	  oversize_volume: Oversize-volume
+      item: Item
+      tube: Tube
+      cardfile_box: Cardfile-box
+      pic_box: PIC-box
+      ax_box: AX-box
+      a_box: A-box
+      b_box: B-box
+      c_box: C-box
+      lan_box: LAN-box
+      neg_box: NEG-box
+      nneg_box: NNEG-box
+      bundle: Bundle
+      reel: Reel
+	  case: Case
       frame: Frame
       object: Object
       page: Page
-      reel: Reel
-      volume: Volume
-      oversize_box: Oversize-box
-      oversize_folder: Oversize-folder
-      tube: Tube
-      cardfile_box: Cardfile-box
-      bundle: Bundle
+	  container: Container
       motion_picture: Motion Picture
       phonotape: Phonotape
-      cd: CD
-      phonodisc: Phonodisc
-      pic_box: PIC<200b>-<200b>box
-      ax_box: AX<200b>-box
-      a_box: A-box
-      b_box: B<200b>-<200b>box
-      c_box: C<200b>-box
-      lan_box: "<200b><200b>LAN-box"
-      neg_box: NEG<200b>-<200b>box
-      nneg_box: NNEG<200b>-box
+      phonodisc: Phonodisc   
+	  carton_box: Carton-Box
+      carton_folder: Carton-Folder
+      box_folder: Box-Folder
+      call_number: Call Number
+      cassette_box: Cassette-box
+      file_box: File-box
+      digital_folder: Digital Folder
+      envelope: Envelope
+      package: Package
+      file: File
+      folio: Folio
+      scrapbook: Scrapbook
+      notebook: Notebook
+      section: Section
+      tape: Tape
+      reel_frame: Reel-Frame  
     country_iso_3166:
       AD: Andorra
       AE: United Arab Emirates
@@ -535,77 +556,82 @@ en:
       not_before: Not Before
       standard: Standard
     event_event_type:
+      access_request: Access Request
+      access: Access
       accession: Accession
+      accessioned: Accessioned
       accumulation: Accumulation
       acknowledgement: Acknowledgement
-      acknowledgement_received: Acknowledgement Received
       acknowledgement_sent: Acknowledgement Sent
+      acknowledgement_received: Acknowledgement Received
+      agreement: Agreement
       agreement_received: Agreement Received
       agreement_sent: Agreement Sent
       agreement_signed: Agreement Signed
-      appraisal: Appraisal
+	  appraisal_archival: Appraisal-Archival
+      appraisal_monetary: Appraisal-Monetary
+      assigned: Assigned
       assessment: Assessment
+      assessment_noi: Assessment-NOI	  
+      authority_work: Authority Work
       capture: Capture
       cataloged: Cataloged
       collection: Collection
-      component_transfer: Component Transfer
       compression: Compression
       contribution: Contribution
+      component_destruction: Component Destruction
+      component_transfer: Component Transfer
       copyright_transfer: Copyright Transfer
       custody_transfer: Custody Transfer
       deaccession: Deaccession
+      deaccession_nrlf: Deaccession-NRLF	  
       decompression: Decompression
       decryption: Decryption
-      deletion: Deletion
-      digital_signature_validation: Digital Signature Validation
-      fixity_check: Fixity Check
-      ingestion: Ingestion
-      message_digest_calculation: Message Digest Calculation
-      migration: Migration
-      normalization: Normalization
-      processed: Processed
-      processing_completed: Processing Completed
-      processing_in_progress: Processing in Progress
-      processing_new: Processing New
-      processing_started: Processing Started
-      publication: Publication
-      replication: Replication
-      request: Request
-      rights_transferred: Rights Transferred
-      validation: Validation
-      virus_check: Virus Check
-      access_request: Access Request
-      access: Access
-      accessioned: Accessioned
-      agreement: Agreement
-      authority_work: Authority Work
       deferred_cataloging: Deferred Cataloging
       deferred_finding_aid: Deferred Finding Aid
       deferred_housing: Deferred Housing
       deferred_reformatting: Deferred Reformatting
       deferred_processing: Deferred Processing
+      deletion: Deletion
       digital_objects_added: Digital Objects Added
+      digital_signature_validation: Digital Signature Validation
+      disk_imaged: Disk Imaged
+      fixity_check: Fixity Check
+      funded_processing: Funded-Processing	  
+      ingestion: Ingestion
+      maintenance_arrangement: Maintenance Arrangement	  
       maintenance_finding_aid: Maintenance Finding Aid
       maintenance_catalog_record: Maintenance Catalog Record
       maintenance_housing: Maintenance Housing
       materials_routed: Materials Routed
       materials_transferred: Materials Transferred
+      message_digest_calculation: Message Digest Calculation
+      migration: Migration
+      normalization: Normalization
+      pii_review: PII Review	  
       preservation_frozen: Preservation-Frozen
       preservation_sent_cons: Preservation-Sent to Cons
       preservation_returned_cons: Preservation-Returned from Cons
+      processed: Processed
+      processing_new: Processing New
+      processing_started: Processing Started
+      processing_in_progress: Processing in Progress
+      processing_completed: Processing Completed
       processing_Completed: Processing_Completed
+      publication: Publication
       publication_findingaid: Publication-Finding Aid
-      republication_findingaid: Republication-Finding Aid
+      purchased: Purchased	  
+	  republication_findingaid: Republication-Finding Aid
       reference_request: Reference Request
+      replication: Replication
+      request: Request
+      rights_transferred: Rights Transferred
+      separation: Separation	  
+      shelved: Shelved	  
+      student_process: Student Process	  
       triaged: Triaged
-      appraisal_archival: Appraisal-Archival
-      appraisal_monetary: Appraisal-Monetary
-      assigned: Assigned
-      component_destruction: Component Destruction
-      disk_imaged: Disk Imaged
-      funded_processing: Funded-Processing
-      purchased: Purchased
-      shelved: Shelved
+      validation: Validation
+      virus_check: Virus Check
     event_outcome:
       cancelled: Cancelled
       fail: Fail
@@ -632,44 +658,54 @@ en:
       false: false
       true: true
     extent_extent_type:
-      cassettes: cassettes
-      cubic_feet: cubic feet
-      files: files
-      gigabytes: gigabytes
-      leaves: leaves
       linear_feet: linear feet
-      megabytes: megabytes
-      photographic_prints: photographic prints
-      photographic_slides: photographic slides
-      reels: reels
-      sheets: sheets
-      terabytes: terabytes
-      volumes: volumes
-      photograph: photograph
-      photographs: photographs
-      film_cartridge: film cartridge
-      film_cartridges: film cartridges
-      film cassette: film cassette
-      film cassettes: film cassettes
-      film loop: film loop
-      film loops: film loops
-      film reel: film reel
-      film reels: film reels
-      exposures: exposures
+      binder: binder
+      binders: binders
+      bundle: bundle
+      bundles: bundles
+      diskette: diskette
+      diskettes: diskettes
       drawing: drawing
       drawings: drawings
+      exposures: exposures
+      files: files
+      film_cartridge: film cartridge
+      film_cartridges: film cartridges
+      film_cassette: film cassette
+      film_cassettes: film cassettes
+      film_loop: film loop
+      film_loops: film loops
+      film_reel: film reel
+      film_reels: film reels
+      gigabytes: GB
+      hard_drive: hard drive
+      hard_drives: hard drives
       item: item
       items: items
-      linearfeet: linear feet [we need a lowercase option in additon to the existing
-        title case term]
+      magnetic_data_tape: magnetic data tape
+      magnetic_data_tapes: magnetic data tapes
+      megabytes: MB
+      microfilm_reel: microfilm reel
+      microfilm_reels: microfilm reels
+      notebook: notebook
+      notebooks: notebooks
+      optical_disc: optical disc
+      optical_discs: optical discs
       painting: painting
       paintings: paintings
+      photograph: photograph
+      photograph: photograph
+      photographs: photographs
+      photographs: photographs
       picture: picture
       pictures: pictures
+      portfolio: portfolio
+      portfolios: portfolios
       print: print
       prints: prints
+      sheets: sheets
       sound_cartridge: sound cartridge
-      sound_cartridges: sound cartridges
+      sound_cartridges: sound cartridges	  
       sound_cartridge_8_track: sound cartridge (8 track)
       sound_cartridges_8_track: sound cartridges (8 track)
       sound_cartridge_Fidelipac: sound cartridge (Fidelipac)
@@ -679,22 +715,22 @@ en:
       sound_cassette_DAT: sound cassette (DAT)
       sound_cassettes_DAT: sound cassettes (DAT)
       sound_cassette_microcassette: sound cassette (microcassette)
-      sound cassettes_microcassette: sound cassettes (microcassette)
+      sound_cassettes_microcassette: sound cassettes (microcassette)
       sound_cylinder: sound cylinder
       sound_cylinders: sound cylinders
       sound_disc: sound disc
       sound_discs: sound discs
-      sound_disc_aluminum: sound disc (aluminum)
-      sound_discs_aluminum: sound discs (aluminum)
       sound_disc_CD: sound disc (CD)
       sound_discs_CD: sound discs (CD)
-      sound_disc_lacquer: sound disc (lacquer)
-      sound_discs_lacquer: sound discs (lacquer)
       sound_disc_Minidisc: sound disc (Minidisc)
       sound_discs_Minidisc: sound discs (Minidisc)
+      sound_disc_aluminum: sound disc (aluminum)
+      sound_discs_aluminum: sound discs (aluminum)
+      sound_disc_lacquer: sound disc (lacquer)
+      sound_discs_lacquer: sound discs (lacquer)
       sound_disc_vinyl: sound disc (vinyl)
       sound_discs_vinyl: sound discs (vinyl)
-      sound_recording: sound recording
+	  sound_recording: sound recording
       sound_recordings: sound recordings
       sound_tape_reel: sound tape reel
       sound_tape_reels: sound tape reels
@@ -704,59 +740,63 @@ en:
       sound_track_film_reels: sound track film reels
       sound_wire_reel: sound wire reel
       sound_wire_reels: sound wire reels
+      terabytes: TB
       video_recording: video recording
-      video_recordings: video recordingsvideocartridge
+      video_recordings: video recordings
       videocartridge: videocartridge
       videocartridges: videocartridges
       videocassette: videocassette
       videocassettes: videocassettes
       videocassette_Betacam: videocassette (Betacam)
-      videocassettes_Betacam: videocassettes (Betacam)
+	  videocassettes_Betacam: videocassettes (Betacam)
       videocassette_BetacamSP: videocassette (BetacamSP)
-      videocassettes_BetacamSP: videocassettes (BetacamSP)
+      videocassettes_BetacamSP: videocassettes (BetacamSP)	  
       videocassette_Betamax: videocassette (Betamax)
-      videocassettes_Betamax: videocassettes (Betamax)
-      videocassette_D_1: videocassette (D-1)
-      videocassettes_D_1: videocassettes (D-1)
-      videocassette_D_2: videocassette (D-2)
-      videocassettes_D_2: videocassettes (D-2)
-      videocassette_Digital_Betacam: videocassette (Digital Betacam)
-      videocassettes_Digital_Betacam: videocassettes (Digital Betacam)
+      videocassettes_Betamax: videocassettes (Betamax)	  
       videocassette_DVCAM: videocassette (DVCAM)
-      videocassettes_DVCAM: videocassettes (DVCAM)
+      videocassettes_DVCAM: videocassettes (DVCAM)	  
       videocassette_DVCPro: videocassette (DVCPro)
-      videocassettes_DVCPro: videocassettes (DVCPro)
+      videocassettes_DVCPro: videocassettes (DVCPro)	  
+      videocassette_D_1: videocassette (D-1)
+      videocassettes_D_1: videocassettes (D-1)	  
+      videocassette_D_2: videocassette (D-2)
+      videocassettes_D_2: videocassettes (D-2)	  
+      videocassette_Digital_Betacam: videocassette (Digital Betacam)
+      videocassettes_Digital_Betacam: videocassettes (Digital Betacam)	  
       videocassette_HDCAM: videocassette (HDCAM)
-      videocassettes_HDCAM: videocassettes (HDCAM)
+      videocassettes_HDCAM: videocassettes (HDCAM)	  
       videocassette_Hi8: videocassette (Hi8)
-      videocassettes_Hi8: videocassettes (Hi8)
+      videocassettes_Hi8: videocassettes (Hi8)	  
       videocassette_MiniDV: videocassette (MiniDV)
+      videocassettes_MiniDV: videocassettes (MiniDV)	  
       videocassette_S_VHS: videocassette (S-VHS)
-      videocassettes_S_VHS: videocassettes (S-VHS)
+      videocassettes_S_VHS: videocassettes (S-VHS)	  
       videocassette_U_matic: videocassette (U-matic)
-      videocassettes_U_matic: videocassettes (U-matic)
+      videocassettes_U_matic: videocassettes (U-matic)	  
       videocassette_VHS: videocassette (VHS)
-      videocassettes_VHS: videocassettes (VHS)
+      videocassettes_VHS: videocassettes (VHS)	  
       videocassette_VHS_C: videocassette (VHS-C)
-      videocassettes_VHS_C: videocassettes (VHS-C)
+      videocassettes_VHS_C: videocassettes (VHS-C)	  
       videocassette_Video_8: videocassette (Video 8)
       videocassettes_Video_8: videocassettes (Video 8)
       videodisc: videodisc
-      videodiscs: videodiscs
+      videodiscs: videodiscs	  
       videodisc_Blue_Ray: videodisc (Blue Ray)
-      videodiscs_Blue_Ray: videodiscs (Blue Ray)
+      videodiscs_Blue_Ray: videodiscs (Blue Ray)	  
       videodisc_DVD: videodisc (DVD)
-      videodiscs_DVD: videodiscs (DVD)
+      videodiscs_DVD: videodiscs (DVD)	  
       videodisc_laser: videodisc (laser)
-      videodiscs_laser: videodiscs (laser)
+      videodiscs_laser: videodiscs (laser)	  
       videoreel_1_inch: videoreel (1 inch)
-      videoreels_1_inch: videoreels (1 inch)
-      videoreel_half_inch: videoreel (1/2 inch)
-      videoreels_half_inch: videoreels (1/2 inch)
+      videoreels_1_inch: videoreels (1 inch)	  
       videoreel_2_inch: videoreel (2 inch)
-      videoreels_2_inch: videoreels (2 inch)
+      videoreels_2_inch: videoreels (2 inch)	  
+      videoreel_half_inch: videoreel (1/2 inch)
+      videoreels_half_inch: videoreels (1/2 inch)	  
       videotape: videotape
       videotapes: videotapes
+	  volume: volume
+      volumes: volumes
     extent_portion:
       part: Part
       whole: Whole
